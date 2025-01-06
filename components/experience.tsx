@@ -22,7 +22,11 @@ export function Experience() {
                 className="border-b border-gray-300 pb-4 last:border-b-0 last:pb-0"
               >
                 <h3 className="font-semibold">{item.company}</h3>
-                <p className="text-sm text-muted-foreground">{item.period[language] || item.period}</p>
+                <p className="text-sm text-muted-foreground">
+                  {typeof item.period === 'string' 
+                    ? item.period 
+                    : item.period[language]}
+                </p>
                 <p className="text-primary">{item.role[language]}</p>
               </motion.div>
             ))}
@@ -32,4 +36,3 @@ export function Experience() {
     </section>
   )
 }
-
