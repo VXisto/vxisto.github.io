@@ -14,7 +14,7 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   output: "export", // <=== enables static exports
-  basePath: "/", 
+  basePath: "./", 
   reactStrictMode: true,
 }
 
