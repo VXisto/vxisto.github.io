@@ -26,11 +26,9 @@ runs:
           npm ci
           npm i --force
           npm run build
-          npm run export
           touch out/.nojekyll
         else
           npm i --force
           npm run build
-          npm run export
           touch out/.nojekyll
         fi
