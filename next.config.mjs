@@ -13,20 +13,12 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  /** images: {
-    unoptimized: true,
-  },
-  experimental: {
-    webpackBuildWorker: true,
-    parallelServerBuildTraces: true,
-    parallelServerCompiles: true,
-  },*/
   output: "export", // <=== enables static exports
   basePath: "/", 
   reactStrictMode: true,
 }
 
-mergeConfig(nextConfig, userConfig)
+mergeConfig(nextConfig, nextConfig)
 
 function mergeConfig(nextConfig, userConfig) {
   if (!userConfig) {
@@ -49,3 +41,12 @@ function mergeConfig(nextConfig, userConfig) {
 }
 
 export default nextConfig
+
+  /** images: {
+    unoptimized: true,
+  },
+  experimental: {
+    webpackBuildWorker: true,
+    parallelServerBuildTraces: true,
+    parallelServerCompiles: true,
+  },*/
