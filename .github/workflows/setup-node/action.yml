@@ -18,12 +18,16 @@ runs:
 
     - name: Install dependencies 🔧
       shell: bash
-      if: steps.cache_dependencies.outputs.cache-hit != 'true'
+      if: steps.cache_dependencies.outputs.cache-hit != 'true' 
       run: |
         if [ -e yarn.lock ]; then
         yarn install --frozen-lockfile
         elif [ -e package-lock.json ]; then
           npm ci
+          npm i --force
+          npm run build
+          npm run export
+          touch out/.nojekyll
         else
           npm i --force
           npm run build
