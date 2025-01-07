@@ -13,14 +13,14 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  images: {
+  /** images: {
     unoptimized: true,
   },
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
-  },
+  },*/
   output: "export", // <=== enables static exports
   basePath: "/", 
   reactStrictMode: true,
