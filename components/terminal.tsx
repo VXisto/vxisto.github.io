@@ -13,7 +13,7 @@ export function Terminal() {
   const fullText = `> vitor.getCurrentRole()
 "${content.hero.title[language]}"
 > vitor.getLocation()
-"Sumaré, São Paulo, Brazil"
+"Sumaré, São Paulo, Brasil"
 > vitor.getExpertise()
 ["DevOps", "Cloud", "Infrastructure", "Automation"]
 > vitor.getMission()
@@ -62,7 +62,7 @@ export function Terminal() {
           </div>
           <div className="ml-4 flex-shrink-0">
             <Image
-              src="/lkinprofile.svg?height=150&width=150"
+              src="/lkinprofile.jpg?height=150&width=150"
               alt="Profile Picture"
               width={150}
               height={150}
