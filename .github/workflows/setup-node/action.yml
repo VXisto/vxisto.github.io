@@ -22,5 +22,4 @@ runs:
       run: |
           npm ci
           npm i --force
-          npm run build
           touch out/.nojekyll
