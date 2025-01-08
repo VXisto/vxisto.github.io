@@ -1,14 +1,17 @@
-let userConfig = undefined
+/** let userConfig = undefined
 try {
   userConfig = await import('./v0-user-next.config')
 } catch (e) {
   // ignore error
-}
+} */
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
+  },
+  images: {
+    unoptimized: true,
   },
   typescript: {
     ignoreBuildErrors: true,
@@ -18,9 +21,9 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-mergeConfig(nextConfig, nextConfig)
+// mergeConfig(nextConfig, nextConfig)
 
-function mergeConfig(nextConfig, userConfig) {
+/** function mergeConfig(nextConfig, userConfig) {
   if (!userConfig) {
     return
   }
@@ -38,13 +41,11 @@ function mergeConfig(nextConfig, userConfig) {
       nextConfig[key] = userConfig[key]
     }
   }
-}
+} */
 
 export default nextConfig
 
-  /** images: {
-    unoptimized: true,
-  },
+  /** 
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
