@@ -34,7 +34,7 @@ jobs:
         run: npx next build
 
       - name: List build files
-        run: ls -lvha
+        run: ls -lvha && ls -lvha .next/
         
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
