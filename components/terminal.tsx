@@ -62,7 +62,7 @@ export function Terminal() {
           </div>
           <div className="ml-4 flex-shrink-0">
             <Image
-              src="/placeholder.svg?height=150&width=150"
+              src="/lkinprofile.jpg?height=150&width=150"
               alt="Profile Picture"
               width={150}
               height={150}
