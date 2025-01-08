@@ -29,13 +29,13 @@ jobs:
         uses: actions/configure-pages@v4
         with:
           static_site_generator: next
-
-      - name: List build files
-        run: ls -lvha
       
       - name: Build with Next.js 🏗️
         run: npx next build
 
+      - name: List build files
+        run: ls -lvha
+        
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
         with:
