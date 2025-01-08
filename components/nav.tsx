@@ -12,7 +12,7 @@ export function Nav() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-sm border-b">
       <div className="container flex h-16 items-center justify-between">
-        <div className="text-xl font-bold"></div>
+        <div className="text-xl font-bold">‎ </div>
         <div className="flex items-center gap-6">
           <div className="hidden md:flex gap-6">
             <a href="#about" className="text-sm font-medium hover:text-primary">
