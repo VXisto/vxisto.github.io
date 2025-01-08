@@ -22,5 +22,5 @@ runs:
       run: |
           npm ci
           npm i --force
-          npx run build production --force
+          npx next build
           touch out/.nojekyll
