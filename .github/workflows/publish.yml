@@ -30,6 +30,9 @@ jobs:
         with:
           static_site_generator: next
 
+      - name: List build files
+        run: ls -lvha
+      
       - name: Build with Next.js 🏗️
         run: npx next build
 
